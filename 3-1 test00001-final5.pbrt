@@ -1,0 +1,209 @@
+Film "image" "integer xresolution" [1366] "integer yresolution" [768] "string filename" "output00001.exr"
+PixelFilter "box" "float xwidth" [0.5] "float ywidth" [0.5] 
+Accelerator "bvh" 
+"string splitmethod" "sah"
+"integer maxnodeprims" [4]
+Sampler "halton"
+"integer pixelsamples" [500]
+"bool samplepixelcenter" "false"
+Integrator "path"
+"integer maxdepth" [10]
+Scale -1 1 1 #avoid the 'flipped image' bug..
+LookAt	0.44700494408607483 8.944981575012207 5.653101921081543
+	0.44347453117370605 8.082301139831543 5.147374153137207
+	-0.0029663224704563618 -0.5057204961776733 0.862688422203064
+
+Camera "perspective"
+"float fov" [30.861580881366024]
+WorldBegin
+LightSource "infinite" "rgb L" [.02 .02 .02]
+	AttributeBegin
+		 LightSource "spot"
+ "point from" [3.3805816173553467 1.463660478591919 6.33987283706665]
+ "point to" [2.9946446418762207 1.393436074256897 5.420024394989014]
+		"blackbody I" [5500 125]
+		AttributeEnd
+
+		AttributeBegin
+			Transform [-1.733528 0.466949 0.000000 0.000000 0.000000 0.000000 1.795316 0.000000 0.016203 0.060153 -0.000000 0.000000 0.516325 1.583068 0.535387 1.000000 ]
+			Material "matte"			
+			"float sigma" [0.0]			
+			"color Kd" [ 0.8000000715255737 0.45257827639579773 0.702305018901825]			
+			Shape "plymesh" "string filename" ["meshes/00001/Bezier.001_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.101403 -1.673126 -0.013516 0.000000 0.106092 -0.007084 1.672874 0.000000 -1.669813 -0.102054 0.105466 0.000000 1.516586 1.541577 -0.233204 1.000000 ]
+			Material "matte"			
+			"float sigma" [0.0]			
+			"color Kd" [ 0.43168604373931885 0.6168192625045776 0.8000000715255737]			
+			Shape "plymesh" "string filename" ["meshes/00001/BezierCurve.008_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [2.302985 0.000000 0.000000 0.000000 0.000000 1.333831 0.000000 0.000000 0.000000 0.000000 1.356518 0.000000 0.328904 1.834603 0.127842 1.000000 ]
+			
+			Texture "2-1.png" "color" "imagemap" "string filename" ["textures/2-1.png"]			
+			Material "matte"			
+			"float sigma" [0.0]			
+			"texture Kd" "2-1.png"			
+			Shape "trianglemesh"
+			"point P" [
+			-1.0 -1.0 0.0 1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 1.0 0.0			
+			]
+			"normal N" [
+			0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0			
+			]
+			"float st" [
+			0.0 0.0 
+			1.0 0.0 
+			1.0 1.0 
+			0.0 0.0 
+			1.0 1.0 
+			0.0 1.0 
+			]
+			"integer indices" [
+			0 1 2 3 4 5 
+			]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [-0.000000 0.000000 -1.076679 0.000000 0.000000 1.129459 0.000000 0.000000 1.076679 0.000000 -0.000000 0.000000 -0.600787 1.418585 1.156132 1.000000 ]
+			
+			Texture "1-1.png" "color" "imagemap" "string filename" ["textures/1-1.png"]			
+			Material "matte"			
+			"float sigma" [0.0]			
+			"texture Kd" "1-1.png"			
+			Shape "trianglemesh"
+			"point P" [
+			-1.0 -1.0 0.0 1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 1.0 0.0			
+			]
+			"normal N" [
+			0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0			
+			]
+			"float st" [
+			0.0 0.0 
+			1.0 0.0 
+			1.0 1.0 
+			0.0 0.0 
+			1.0 1.0 
+			0.0 1.0 
+			]
+			"integer indices" [
+			0 1 2 3 4 5 
+			]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.381880 0.000000 0.000000 0.000000 0.000000 0.381880 0.000000 0.000000 0.000000 0.000000 0.381880 0.000000 1.014965 1.782354 0.431958 1.000000 ]
+			Material "plastic"			
+			"color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929]			
+			"color Ks" [ 0.800000011920929 0.800000011920929 0.800000011920929]			
+			"float roughness" [0.0]			
+			Shape "plymesh" "string filename" ["meshes/00001/Icosphere_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [-0.399193 0.000000 0.000000 0.000000 0.000000 -0.399193 0.000000 0.000000 0.000000 0.000000 -0.399193 0.000000 -0.039874 1.723201 0.462819 1.000000 ]
+			Material "metal"			
+			"color eta" [ 0.5105159878730774 0.5105159878730774 0.5105159878730774]			
+			"color k" [ 1.0 1.0 1.0]			
+			"float roughness" [0.0]			
+			"float uroughness" [0.0]			
+			"float vroughness" [0.0]			
+			Shape "plymesh" "string filename" ["meshes/00001/Icosphere.001_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.529486 0.000000 0.000000 0.000000 0.000000 0.324349 0.000000 0.000000 0.000000 0.000000 1.116822 0.000000 0.578253 0.662216 0.400065 1.000000 ]
+			Material "glass"			
+			"color Kr" [ 0.800000011920929 0.800000011920929 0.800000011920929]			
+			"color Kt" [ 1.0 1.0 1.0]			
+			"float uroughness" [0.0]			
+			"float vroughness" [0.0]			
+			"float index" [1.3329999446868896]			
+			Shape "plymesh" "string filename" ["meshes/00001/Torus_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.464994 -0.165289 0.000000 0.000000 0.165289 0.464994 0.000000 0.000000 0.000000 0.000000 -0.020987 0.000000 -0.040399 1.748487 0.833774 1.000000 ]
+			Material "mirror"			
+			"color Kr" [ 0.800000011920929 0.800000011920929 0.800000011920929]			
+			Shape "plymesh" "string filename" ["meshes/00001/Cylinder_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.152971 0.112868 0.047731 0.000000 -0.120946 0.151347 0.029727 0.000000 -0.019738 -0.052653 0.187765 0.000000 1.484606 2.638548 0.322629 1.000000 ]
+			Material "plastic"			
+			"color Kd" [ 0.6815729141235352 0.8000000715255737 0.4027641713619232]			
+			"color Ks" [ 0.800000011920929 0.800000011920929 0.800000011920929]			
+			"float roughness" [0.0]			
+			Shape "plymesh" "string filename" ["meshes/00001/Sphere_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.028905 0.030729 0.000000 0.000000 0.000000 -0.000000 0.045104 0.000000 0.235197 -0.221234 -0.000000 0.000000 -0.250634 2.145274 0.901968 1.000000 ]
+			Material "metal"			
+			"color eta" [ 0.800000011920929 0.800000011920929 0.800000011920929]			
+			"color k" [ 0.8000000715255737 0.45140379667282104 0.3925866186618805]			
+			"float roughness" [0.0]			
+			"float uroughness" [0.0]			
+			"float vroughness" [0.0]			
+			Shape "plymesh" "string filename" ["meshes/00001/Cylinder.001_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.123365 0.000000 -0.343702 0.000000 0.000000 0.856388 0.000000 0.000000 -0.002055 0.000000 -0.000738 0.000000 1.747358 -0.754888 -0.680470 1.000000 ]
+			Material "matte"			
+			"float sigma" [0.0]			
+			"color Kd" [ 0.0 0.0 0.0]			
+			Shape "plymesh" "string filename" ["meshes/00001/Cube.001_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.184298 0.135983 0.057506 0.000000 -0.145715 0.182342 0.035815 0.000000 -0.023780 -0.063436 0.226218 0.000000 0.326398 2.634959 0.322629 1.000000 ]
+			Material "metal"			
+			"color eta" [ 0.800000011920929 0.800000011920929 0.800000011920929]			
+			"color k" [ 0.5882810950279236 0.399675190448761 0.8000000715255737]			
+			"float roughness" [0.0]			
+			"float uroughness" [0.0]			
+			"float vroughness" [0.0]			
+			Shape "plymesh" "string filename" ["meshes/00001/Sphere.001_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [-3.477989 0.000000 0.000000 0.000000 0.000000 3.667208 0.000000 0.000000 0.000000 0.000000 -0.145676 0.000000 0.308927 1.480592 -0.077097 1.000000 ]
+			
+			Texture "3-1.png" "color" "imagemap" "string filename" ["textures/3-1.png"]			
+			Material "matte"			
+			"float sigma" [0.0]			
+			"texture Kd" "3-1.png"			
+			Shape "plymesh" "string filename" ["meshes/00001/Cube_mat0.ply"]
+		AttributeEnd
+		
+
+		AttributeBegin
+			Transform [0.002712 0.002617 0.000000 0.000000 -0.002617 0.002712 0.000000 0.000000 0.000000 0.000000 0.003769 0.000000 -0.091845 1.686108 0.825489 1.000000 ]
+			Material "metal"			
+			"color eta" [ 0.342378169298172 0.6634592413902283 1.0]			
+			"color k" [ 0.712209939956665 0.7644457817077637 0.31974881887435913]			
+			"float roughness" [0.0]			
+			"float uroughness" [0.0]			
+			"float vroughness" [0.0]			
+			Shape "plymesh" "string filename" ["meshes/00001/Golden Tiger_mat0.ply"]
+		AttributeEnd
+		
+
+	WorldEnd	
